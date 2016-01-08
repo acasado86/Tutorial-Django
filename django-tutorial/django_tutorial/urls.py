@@ -19,6 +19,7 @@ from django.contrib import admin
 
 urlpatterns = [
     #url(r'^$', main_views.homepage, name='home'),
+    url(r'^csv/', include('csv_out.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
     #url(r'^antonio/', views.antonio),
